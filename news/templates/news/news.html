@@ -1,0 +1,25 @@
+{% extends 'main/lay.html' %}
+{% block content %}
+<header class="c">
+    <h1 class="kk">Новости</h1>
+    <br>
+    <div>Здесь я буду публиковать новости о программировании</div>
+</header>
+<main>
+    {% if news %}
+        {% for d in news %}
+            <div class="b">
+                <h1 class="kk" id="z">{{ d.title }}</h1>
+                <hr>
+                <p class="g">{{ d.text }}</p>
+                <span class="fff">{{ d.date }}</span>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>На данный момент новостей нет</p>
+    {% endif %}
+</main>
+{% endblock %}
+{% block title %}
+Новости
+{% endblock %}

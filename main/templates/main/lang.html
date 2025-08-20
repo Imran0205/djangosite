@@ -1,0 +1,17 @@
+{% extends 'main/lay.html' %}
+{% block content %}
+<header class="c">
+    <h1 class="kk">Информация о языках программирования </h1>
+</header>
+<main>
+    {% for k in langu %}
+      <div class="b">
+          <h2>{{ k.lang }}</h2>
+          <a href="{% url 'detail' k.id %}">Описание</a>
+      </div>
+    {% endfor %}
+</main>
+{% endblock %}
+{% block title %}
+Языки программирования
+{% endblock %}

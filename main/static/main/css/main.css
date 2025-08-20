@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+body {
+  background-color: #278c47;
+}
+#w {
+  background: url("/static/main/img/gay.jpg");
+  width: 1880px;
+  text-align: center;
+  background-size: cover;
+  height: 500px;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  background-repeat: no-repeat;
+  border: 5px double black;
+  border-radius: 15px
+}
+.kk {
+  font-size: 4em;
+}
+main {
+  font-family: "Edu NSW ACT Cursive", cursive;
+}
+details:hover {
+  cursor: auto;
+}
+details {
+  font-size: 1.5em;
+}
+.ll {
+  font-size: 1.5em;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding-left: 3px
+}
+summary:hover {
+  cursor: pointer;
+}
+.pp {
+  line-height: 50px
+}
+a {
+  color: green !important;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+a:hover {
+  color: silver !important;
+  text-decoration: underline;
+}
+.j {
+  background-color: white;
+  border: 5px double silver;
+  border-bottom: 3px solid black;
+  border-radius: 7px;
+  padding-left: 5px
+}
+#Hel {
+  font-size: 3em
+}
+#jk {
+  background-color: gray;
+  border: 5px double silver;
+  border-bottom: 3px solid black;
+  border-radius: 7px;
+  padding-left: 5px;
+  margin-top: 5px;
+  display: block;
+}
+#lilo {
+  background-color: black;
+  border: 1px solid blue;
+  border-radius: 4px;
+  width: 30px;
+  height: 100px;
+  float: right;
+  overflow: visible; /* Чтобы не вылезало */
+  position: relative; /* Для абсолютного позиционирования ссылки, если нужно */
+  transition: transform 0.6s ease, padding 0.6s ease;
+  transform-origin: top right;
+}
+
+#lilo:hover {
+  padding: 5px;
+  transform: scale(10, 5);
+}
+#os {
+  top: 50px;  /* скорректируй по желанию */
+  right: 20px !important; /* скорректируй по желанию */
+}
+#lilo:hover .jjj{
+  opacity: 1 !important;
+  pointer-events: auto;
+}
+.jjj {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+  /* Добавим обратное масштабирование, чтобы ссылка не увеличивалась */
+  transform-origin: top right;
+  transform: scale(0.1, 0.2);
+  position: absolute; /* чтобы не влияла на размер контейнера */
+  color: white;
+  white-space: nowrap;
+  background: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 2px
+}
+#jos {
+  top: 70px;  /* скорректируй по желанию */
+  right: 20px; /* скорректируй по желанию */
+}
+.jjj:hover {
+transition: transform 0.6s ease;
+transform: scale(0.11, 0.25);
+}
+#p {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+  /* Добавим обратное масштабирование, чтобы ссылка не увеличивалась */
+  transform-origin: top right;
+  transform: scale(0.1, 0.2) !important;
+  position: absolute; /* чтобы не влияла на размер контейнера */
+  top: 20px;  /* скорректируй по желанию */
+  right: 7px; /* скорректируй по желанию */
+  color: white;
+  white-space: nowrap;
+  color: white;
+  font-size: 28px;
+}
+#lilo:hover #p{
+  opacity: 1;
+  pointer-events: auto;
+}
+#jf {
+  top: 50px;  /* скорректируй по желанию */
+  right: 2px; /* скорректируй по желанию */
+}
+.c {
+  background-color: yellow;
+  width: 1880px;
+  text-align: center;
+  background-size: cover;
+  height: 200px;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  background-repeat: no-repeat;
+  border: 5px solid black;
+  border-radius: 15px
+}
+.b {
+  background-color: #d4c17f;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 4px;
+  margin: 15px;
+}
+.g {
+  color: #1a968a;
+  font-size: 1.5em;
+}
+.fff {
+  font-size: 0.7em;
+  color: gray
+}
+#ho {
+  top: 90px;  /* скорректируй по желанию */
+  right: 7px;
+}
+#ps {
+  top: 70px;  /* скорректируй по желанию */
+  right: 2px;
+}
+#u {
+  text-align: center
+}
+.hh {
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 7px
+}
+#jon {
+  width: 400px;
+  height: 200px;
+  margin-left: 750px
+}
+#son {
+  margin-left: 850px
+}
+#il {
+  margin-left: 900px;
+  background-color: #eb4034
+}
+#il:hover {
+  background-color: #eb9c34
+}
+#oioi {
+  margin-top: 20px;
+  color: red;
+}
+#losan {
+  top: 35px;  /* скорректируй по желанию */
+  right: 12px;
+}

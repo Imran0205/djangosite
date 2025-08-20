@@ -1,0 +1,18 @@
+{% extends 'main/lay.html' %}
+{% block content %}
+<header class="c">
+      <h1 class="kk" id="u">Вы можете загрузить свой совет ниже</h1>
+</header>
+<main>
+    <form method="post">
+        {% csrf_token %}
+        {{ lol.Name }}<br>
+        {{ lol.Advice }}<br>
+        <button type="submit" class="hh" id="il">Загрузить</button><br>
+        <span id="oioi">{{ error }}</span>
+    </form>
+</main>
+{% endblock %}
+{% block title %}
+Создать совет
+{% endblock %}
