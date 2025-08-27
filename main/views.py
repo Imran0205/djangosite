@@ -20,6 +20,7 @@ def a(request):
     return render(request, 'main/a.html')
 
 def create_advice(request):
+    session_data = {}
     error = ''
     if request.method == "POST":
         hi = adviceslol(request.POST)
