@@ -32,6 +32,7 @@ def create_advice(request):
             return redirect('advice')
         else:
             error = 'Введите правильно'
+            session_data = request.session.get('form_data', {})
     lol = adviceslol(initial=session_data)
 
     i = {
