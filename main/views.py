@@ -24,11 +24,15 @@ def create_advice(request):
     if request.method == "POST":
         hi = adviceslol(request.POST)
         if hi.is_valid():
+            request.session['form_data'] = {
+                'Name': hi.cleaned_data['Name'],
+                'Advice': hi.cleaned_data['Advice']
+            }
             hi.save()
             return redirect('advice')
         else:
             error = 'Введите правильно'
-    lol = adviceslol()
+    lol = adviceslol(initial=session_data)
 
     i = {
         'lol': lol,
