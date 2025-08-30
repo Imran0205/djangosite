@@ -9,7 +9,7 @@ body {
   text-align: center;
   background-size: cover;
   height: 500px;
-  font-family: "Overpass", sans-serif;
+  font-family: "Overpass", sans-serif !important;
   background-repeat: no-repeat;
   border: 5px double black;
   border-radius: 15px
@@ -18,7 +18,7 @@ body {
   font-size: 4em;
 }
 main {
-  font-family: "Overpass", sans-serif;
+  font-family: "Overpass", sans-serif !important;
 }
 details:hover {
   cursor: auto;
@@ -147,7 +147,7 @@ transform: scale(0.11, 0.25);
   text-align: center;
   background-size: cover;
   height: 200px;
-  font-family: "Overpass", sans-serif;
+  font-family: "Overpass", sans-serif !important;
   background-repeat: no-repeat;
   border: 5px solid black;
   border-radius: 15px
