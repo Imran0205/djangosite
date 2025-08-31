@@ -5,7 +5,7 @@ body {
 }
 #w {
   background: url("/static/main/img/gay.jpg");
-  width: 1880px;
+  width: 100%;
   text-align: center;
   background-size: cover;
   height: 500px;
@@ -143,7 +143,7 @@ transform: scale(0.11, 0.25);
 }
 .c {
   background-color: yellow;
-  width: 1880px;
+  width: 100%;
   text-align: center;
   background-size: cover;
   height: 200px;
