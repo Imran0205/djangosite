@@ -186,13 +186,16 @@ transform: scale(0.11, 0.25);
 #jon {
   width: 400px;
   height: 200px;
-  margin-left: 750px
+  margin-left: auto;
+  margin-right: auto;
 }
 #son {
-  margin-left: 850px
+  margin-left: auto;
+  margin-right: auto
 }
 #il {
-  margin-left: 900px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #eb4034
 }
 #il:hover {
