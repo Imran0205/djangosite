@@ -8,8 +8,15 @@ def index(request):
     return render(request, 'main/index.html')
 
 def lang(request):
+    user_agent = request.META.get('HTTP_USER_AGENT', '').lower()
+
+    if 'mobile' in user_agent or 'android' in user_agent or 'iphone' in user_agent:
+        is_mobile = True
+    else:
+        is_mobile = False
+
     langu = langmod.objects.all()
-    return render(request, 'main/lang.html', {'langu': langu})
+    return render(request, 'main/lang.html', {'langu': langu}, {'is_mobile': is_mobile})
 
 class langDetailView(DetailView):
     model = langmod

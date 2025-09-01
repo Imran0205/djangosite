@@ -4,6 +4,12 @@
     <h1 class="kk" id="loh">Информация о языках программирования </h1>
 </header>
 <main>
+    % if is_mobile %}
+    <style>
+       .kk {
+        transform: scale(0.25);
+       }
+    </style>
     {% for k in langu %}
       <div class="b">
           <h2>{{ k.lang }}</h2>
