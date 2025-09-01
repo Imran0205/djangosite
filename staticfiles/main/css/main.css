@@ -210,3 +210,6 @@ transform: scale(0.11, 0.25);
   top: 35px;  /* скорректируй по желанию */
   right: 12px;
 }
+#loh {
+  text-align: center
+}
