@@ -43,11 +43,14 @@ def create_advice(request):
             session_data = request.session.get('form_data', {})
     lol = adviceslol(initial=session_data)
 
-    i = {
-        'lol': lol,
-        'error': error
-    }
-    return render(request, 'main/createadvice.html', i)
+    user_agent = request.META.get('HTTP_USER_AGENT', '').lower()
+
+    if 'mobile' in user_agent or 'android' in user_agent or 'iphone' in user_agent:
+        is_mobile = True
+    else:
+        is_mobile = False
+
+    return render(request, 'main/createadvice.html', {'lol': lol, 'error': error, 'is_mobile': is_mobile})
 
 def advice(request):
     user_agent = request.META.get('HTTP_USER_AGENT', '').lower()

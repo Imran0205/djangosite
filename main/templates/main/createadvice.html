@@ -4,6 +4,13 @@
       <h1 class="kk" id="u">Вы можете загрузить свой совет ниже</h1>
 </header>
 <main>
+    {% if is_mobile %}
+      <style>
+          .kk {
+          font-size: 2em;
+          }
+      </style>
+    {% endif %}
     <form method="post">
         {% csrf_token %}
         {{ lol.Name }}<br>
