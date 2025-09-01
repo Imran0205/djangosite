@@ -5,6 +5,13 @@
       <span class="fff">Соблюдайте порядок в сообщениях</span>
 </header>
 <main>
+      {% if is_mobile %}
+      <style>
+          .kk {
+          font-size: 2em;
+          }
+      </style>
+      {% endif %}
       {% for item in advicess %}
         <div class="b">
             <h4>{{ item.Name }}</h4>

@@ -50,5 +50,12 @@ def create_advice(request):
     return render(request, 'main/createadvice.html', i)
 
 def advice(request):
+    user_agent = request.META.get('HTTP_USER_AGENT', '').lower()
+
+    if 'mobile' in user_agent or 'android' in user_agent or 'iphone' in user_agent:
+        is_mobile = True
+    else:
+        is_mobile = False
+
     advicess = advices.objects.all()
-    return render(request, 'main/advice.html', {'advicess': advicess})
+    return render(request, 'main/advice.html', {'advicess': advicess, 'is_mobile': is_mobile})
