@@ -16,7 +16,7 @@ def lang(request):
         is_mobile = False
 
     langu = langmod.objects.all()
-    return render(request, 'main/lang.html', {'langu': langu}, {'is_mobile': is_mobile})
+    return render(request, 'main/lang.html', {'langu': langu, 'is_mobile': is_mobile})
 
 class langDetailView(DetailView):
     model = langmod
